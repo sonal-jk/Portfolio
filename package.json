@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "history": "^4.10.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
     "react-router-dom": "^6.16.0"
   }
 }
