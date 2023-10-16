@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import  "../style.css"
+import  "../style.scss"
 import logo from "../images/Logo.png"
 
 const Layout = () => {
