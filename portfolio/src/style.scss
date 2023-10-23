@@ -148,6 +148,39 @@ li{
         padding:0px  5%;
     }
 }
+.skillset{
+    background-color: #FFDBC3;
+    padding: 2% 4% 5% 4%;
+    h1{
+        text-align: center;
+        color: #F56D56;
+        font-weight: bolder;
+        margin:0% 0% 5% 0%;
+        font-size: 4vmax
+    }div{
+        width: 100%;
+        
+    @include center;
+    .grid1,.grid2{
+        div{
+            margin: 0% 5%;
+            @include center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            img{
+                width: 70%;
+                
+            }
+            strong{
+                color: #f0664e;
+                text-align: center;
+            }
+
+        }}
+    }
+    
+}
 @media (max-width:1024px) and (min-width:901px){
     nav img{
         width: 30%;
@@ -246,6 +279,22 @@ li{
     #p3{
         @include size(4vw)
     }
+    .skillset{
+        div{
+            flex-direction: column;
+            .grid1,.grid2{
+                @include center;
+                flex-direction: row;
+                div{
+                img{
+                    width: 50%;
+                }}
+            }
+            .grid1{
+                margin-bottom: 5%;
+            }
+        }
+    }
 }
 @media (max-width:510px){
     nav img{
@@ -312,6 +361,51 @@ li{
             }
         }
     }
+    
+}
+@media (max-width:510px) and (min-width:301px){
+    .skillset{
+        h1{
+            margin-bottom: 8%;
+        }
+        div{
+            flex-direction: column;
+            .grid1,.grid2{
+
+                @include center;
+                flex-direction: row;
+                div{
+                    margin-bottom: 5%;
+                img{
+                    width: 40%;
+                }}
+            }
+            .grid1{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+@media (max-width:300px){
+    .skillset{
+        h1{
+            margin-bottom: 8%;
+        }
+        div{
+            flex-direction: column;
+            .grid1,.grid2{
+                div{
+                    margin-bottom: 5%;
+                img{
+                    width: 25%;
+                }}
+            }
+            .grid1{
+                margin-bottom: 5%;
+            }
+        }
+    }
+
 }
 @media screen and (max-width: 780px){
     
