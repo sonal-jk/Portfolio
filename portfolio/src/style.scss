@@ -39,6 +39,7 @@ nav{
     padding:0 10%;
     width: 50%;
     margin-left: 25%;
+    margin-top: auto;
     }
 }
 a{
@@ -143,7 +144,7 @@ li{
         margin: 0px 10%;
     }
     #me2{
-        width: 25%;
+        width: 35%;
         padding:0px  5%;
     }
 }
@@ -170,7 +171,7 @@ li{
         @include size(3vw);
     }
     #p2{
-        @include size(8vw);
+        @include size(6vw);
     }
     #p3{
         @include size(4vw);
@@ -198,10 +199,10 @@ li{
         @include size(4vw);
     }
     #p2{
-        @include size(8vw);
+        @include size(6vmax);
     }
     #p3{
-        @include size(5vw)
+        @include size(5max)
     }
 }
 @media (max-width:763px) and (min-width:511px){
@@ -240,10 +241,10 @@ li{
         @include size(4vw);
     }
     #p2{
-        @include size(8vw);
+        @include size(6vw);
     }
     #p3{
-        @include size(5vw)
+        @include size(4vw)
     }
 }
 @media (max-width:510px){
