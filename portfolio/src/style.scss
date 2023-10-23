@@ -28,8 +28,8 @@ nav{
     box-shadow: 0px 2px 2px rgb(172, 170, 170)  ;
 
     img{
-        width: 20%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         align-self: center;
     }
 
@@ -148,8 +148,8 @@ li{
 }
 @media (max-width:1024px) and (min-width:901px){
     nav img{
-        width: 25%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         align-self: center;
     }
     .innercont{
@@ -177,8 +177,8 @@ li{
 }
 @media (max-width:900px) and (min-width:764px){
     nav img{
-        width: 25%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         align-self: center;
     }
     .innercont{
@@ -205,8 +205,8 @@ li{
 }
 @media (max-width:763px) and (min-width:511px){
     nav img{
-        width: 25%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         align-self: center;
     }
     .innercont{
@@ -247,8 +247,8 @@ li{
 }
 @media (max-width:510px){
     nav img{
-        width: 25%;
-        height: 10%;
+        width: 30%;
+        height: 15%;
         align-self: center;
     }
     .innercont{
@@ -286,3 +286,56 @@ li{
         @include size(7vw)
     }
 }
+@media screen and (max-width: 780px){
+    
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          background-color: #120f0b;
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+  
+    /* adding active class to the bars  */
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+  
+    /* navMenu 
+  
+    nav ul{
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background-color: aliceblue;
+      padding: 10px;
+    }
+  
+    nav ul.active{
+      left: 0;
+    }
+  
+    nav ul li {
+      margin: 16px 0;
+    }*/
+  }

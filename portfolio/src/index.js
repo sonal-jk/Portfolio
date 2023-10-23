@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import  "./style.scss"
+import "./index.css"
 
 export default function App() {
   return (

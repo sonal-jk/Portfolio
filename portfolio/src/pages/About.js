@@ -1,4 +1,4 @@
-import ghost from '../images/ghost.png'
+import ghost from '../images/Rectangle 3.png'
 import '../style.scss'
 const About = () => {
     return <div className='about'>
