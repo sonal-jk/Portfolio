@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import  "./style.scss"
 import "./index.css"
 
+
 export default function App() {
   return (
     <BrowserRouter>

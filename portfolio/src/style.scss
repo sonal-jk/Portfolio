@@ -1,3 +1,4 @@
+@import '~bootstrap/scss/bootstrap';
 body{
     background:url("./images/Frame\ 1.png");
     background-size: cover;
@@ -122,27 +123,27 @@ li{
     position: center;
     
 }
-    padding: 5% 0px;
+    padding: 10% 0px;
     #me{
     margin:0px 0px 0px 10% ;
     width: 60%;
     
     div h1{
         margin: 0px 0px 3% 0px;
-        font-size: 40px;
+        font-size: 4vmax;
 
     }
     p{
-        font-size: 18px;
+        font-size: 1.4vmax;
     }
     }
 
     img{
-        width: 10vw;
+        width: 70%;
         margin: 0px 10%;
     }
     #me2{
-        width: 30%;
+        width: 25%;
         padding:0px  5%;
     }
 }
@@ -284,6 +285,31 @@ li{
     }
     #p3{
         @include size(7vw)
+    }
+    .about{
+        flex-direction: column;
+        #me2{
+            display: contents;
+            width: 100%;
+            margin: 10%;
+            img{
+                align-self: center;
+                width: 40%;
+            }
+        }
+        #me{
+            width: 100%;
+            padding: 4%;
+            margin: 5% 0 0 10% ;
+            div{
+                width: 90%;
+                
+            h1{
+                text-align: center;
+                margin-bottom: 7%;
+            }
+            }
+        }
     }
 }
 @media screen and (max-width: 780px){
