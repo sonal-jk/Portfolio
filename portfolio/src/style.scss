@@ -29,8 +29,8 @@ nav{
     box-shadow: 0px 2px 2px rgb(172, 170, 170)  ;
 
     img{
-        width: 30%;
-        height: 15%;
+        width: 25%;
+        height: 10%;
         align-self: center;
     }
 
@@ -68,21 +68,22 @@ li{
 }
 .innercont{
     @include center;
-   
-    width: 70%;
+   padding: 5%;
+
+    width: 100%;
    flex-direction: column;
 }
 #p1{
-    font-size: 2vw;
+    font-size: 2vmax;
 }
 #p2{
     font: {
         weight: bold;
-        size: 5vw;
+        size: 5vmax;
     }
 }
 #p3{
-    font-size: 2.5vw;
+    font-size: 2.5vmax;
 }
 .container button{
     border: none;
@@ -181,6 +182,38 @@ li{
     }
     
 }
+.projects{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 3% 10%;
+    #headline{
+        font-size: 3vmax;
+    }
+    #pro1{
+        margin-top: 5%;
+        @include center;
+        .panel{
+            text-align: left;
+            
+            padding: 2%;
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            strong{
+                text-decoration: underline;
+            }
+            div{
+                margin-left: 3%;
+            }
+            
+             
+            
+        }
+    }
+}
+
 @media (max-width:1024px) and (min-width:901px){
     nav img{
         width: 30%;
