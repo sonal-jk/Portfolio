@@ -150,14 +150,14 @@ li{
     }
 }
 .skillset{
-    background-color: #FFDBC3;
-    padding: 2% 4% 5% 4%;
+    background-color: #24292F;
+    padding: 1% 4% 2% 4%;
     h1{
         text-align: center;
-        color: #F56D56;
+        color: white;
         font-weight: bolder;
-        margin:0% 0% 5% 0%;
-        font-size: 4vmax
+        margin:0% 0% 3% 0%;
+        font-size: 3vmax
     }div{
         width: 100%;
         
@@ -170,11 +170,11 @@ li{
             flex-direction: column;
             gap: 20px;
             img{
-                width: 70%;
+                width: 40%;
                 
             }
             strong{
-                color: #f0664e;
+                color: white;
                 text-align: center;
             }
 
@@ -183,7 +183,7 @@ li{
     
 }
 .projects{
-    background-color: white;
+    background-color: #FDFDFD;
     text-align: center;
     margin-bottom: 100px;
     padding: 3% 10%;
@@ -241,6 +241,9 @@ li{
     }
     #p3{
         @include size(4vw);
+    }
+    .projects{
+        padding: 3 7%;
     }
 }
 @media (max-width:900px) and (min-width:764px){
@@ -441,7 +444,15 @@ li{
 
 }
 @media screen and (max-width: 780px){
-    
+    .projects{
+        padding: 3% 10%;
+        #pro1{
+            flex-direction: column;
+            .panel{
+                width: 100%;
+            }
+        }
+    }
     /* hamburger */
     .hamburger {
       display: block;
