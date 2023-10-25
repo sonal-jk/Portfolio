@@ -4,19 +4,18 @@ import logo from "../images/Logo.png"
 //import { useState } from 'react'
 
 const Layout = () => {
- /* const [isActive, setIsActive] = useState(false);
 
 
   //add the active class
   const toggleActiveClass = () => {
-    setIsActive(!isActive);
+    const z=document.querySelector(".hamburger");
+    const y=document.querySelector("nav ul");
+    z.classList.toggle("active");
+    y.classList.toggle("active");
   };
 
 
-  //clean up function to remove the active class
-  const removeActive = () => {
-    setIsActive(false)
-  }*/
+
   return (
     <>
       <nav>
@@ -33,11 +32,11 @@ const Layout = () => {
             <Link to="/projects">PROJECTS</Link>
           </li>
         </ul>
-        {/*<div className='hamburger isActive ? active : ""'  onClick={toggleActiveClass}>
+        <div className="hamburger"  onClick={toggleActiveClass}>
             <span className='bar'></span>
             <span className='bar'></span>
             <span className='bar'></span>
-          </div>*/}
+          </div>
       </nav>
 
       <Outlet />
